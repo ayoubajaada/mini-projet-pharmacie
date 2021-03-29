@@ -203,8 +203,7 @@ void sauvegarderClients(vector<Pharmacie> &p){
     
     ofstream fichDebit,fichCredit;
 
-//    fichDebit.open("/Users/mac/Documents/LUS genie informatique/Algorithmique et programmation en C++/pharmacie1/fichDebit.txt");
-    fichDebit.open("fichDebit.dat");
+
     for (int i=0; i<p.size(); i++) {
         fichDebit<< "---------------------------------------"<<endl;
         fichDebit<< "\t\t\tPharmacie :"<<p[i].getNom()<<endl;
@@ -219,7 +218,7 @@ void sauvegarderClients(vector<Pharmacie> &p){
 
     fichDebit.close();
     
-//    fichCredit.open("/Users/mac/Documents/LUS genie informatique/Algorithmique et programmation en C++/pharmacie1/fichCredit.txt");
+
     fichCredit.open("fichCredit.dat");
     for (int i=0; i<p.size(); i++) {
         fichDebit<< "---------------------------------------"<<endl;
